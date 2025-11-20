@@ -1,2 +1,22 @@
-# Camera-Microphone-Usage-Detection
-Understanding browser prompts &amp; permissions for camera and microphone
+# 项目简介
+
+本项目是一个用于研究浏览器在调用摄像头与麦克风时的权限提示、流的生命周期以及关闭设备后的行为的在线调试页面。
+通过这个简单的交互式控制台，你可以直观看到：
+
+浏览器在首次请求 camera/microphone 时如何弹出授权提示
+
+用户授权后视频流和音频流的创建、切换、分离
+
+关闭流（停止 track）后浏览器如何关闭摄像头灯、麦克风指示
+
+不同浏览器对权限错误、设备不存在等情况的提示行为差异
+
+这非常适合作为：
+
+WebRTC / getUserMedia 初学者练习
+
+安全审计 / 权限行为观察
+
+调试摄像头占用、麦克风占用等异常问题
+
+构建更复杂音视频应用前的基础验证
